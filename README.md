@@ -1,4 +1,4 @@
 # CRUD-API-for-Products
-To use fixtures use command
+To use fixtures try command
 
 python manage.py loaddata fixtures.json
