@@ -41,4 +41,7 @@ Now you are good to go
 
 Link to APIs documentation
 https://documenter.getpostman.com/view/19526448/UzkQayvV
+
+
+
 Redis msi for windows users https://github.com/tporadowski/redis/releases
