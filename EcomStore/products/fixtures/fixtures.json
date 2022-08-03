@@ -1,218 +1,161 @@
 [
-    {
+  {
+    "model": "products.category",
+    "pk": 1,
+    "fields": {
+      "category_name":"Mobile",
+      "slug":"mobile"
+    }
+  },
+  {
       "model": "products.category",
-      "pk": 1,
+      "pk": 2,
       "fields": {
-        "category_name":"Mobile",
-        "slug":"mobile"
+        "category_name":"Laptop",
+        "slug":"laptop"
       }
     },
     {
-        "model": "products.category",
-        "pk": 2,
-        "fields": {
-          "category_name":"Laptop",
-          "slug":"laptop"
-        }
-      },
-      {
-        "model": "products.category",
-        "pk": 3,
-        "fields": {
-          "category_name":"Home Appliance",
-          "slug":"home-appliance"
-        }
-      },
-
-
-        {
-        "model": "products.colorvariant",
-        "pk": 1,
-        "fields": {
-          "color_name":"Red",
-          "color_code":"#d11117"
-        }
-      },  
-      {
-        "model": "products.colorvariant",
-        "pk": 2,
-        "fields": {
-          "color_name":"Silver",
-          "color_code":"#a3a2a2"
-        }
-      },    {
-        "model": "products.colorvariant",
-        "pk": 3,
-        "fields": {
-          "color_name":"Green",
-          "color_code":"#46a364"
-        }
-      },  
-      
-      
-      
-      
-      
-      {
-        "model": "products.sizevariant",
-        "pk": 1,
-        "fields": {
-          "size_name":"Cms"
-        }
-      },
-
-      {
-        "model": "products.sizevariant",
-        "pk": 2,
-        "fields": {
-          "size_name":"Inches"
-        }
-      },
-
-
-      {
-        "model": "products.product",
-        "pk": 1,
-        "fields": {
-          "category":1,
-          "product_name":"Redmik50i",     
-          "image":"",
-          "price":"27000",
-          "description":"The 5G enabled Dimensity 8100 SoC built on TSMC s advanced 5nm process technology has 25% better CPU power efficiency over previous Dimensity chips",
-           "stock":100,
-           "color_type":1,
-           "size_type":1
-        }
-      }, 
-      {
-        "model": "products.product",
-        "pk": 2,
-        "fields": {
-            "category":1,
-            "product_name":"Mi 11x pro",     
-            "image":"",
-            "price":"41000",
-            "description":"Qualcomm Snapdragon 888 5G with Kryo 680 Octa-core; 5nm process; Up to 2.84GHz clock speed; Liquidcool Camera: 108 MP Triple Rear camera with 8MP Ultra-wide and 5MP Super macro | 20 MP Front camera",
-             "stock":9,
-             "color_type":3,
-             "size_type":1
-        }
-      }, 
-      {
-        "model": "products.product",
-        "pk": 3,
-        "fields": {
-            "category":2,
-            "product_name":"X1 slim",     
-            "image":"",
-            "price":"29000",
-            "description":"Built with a 16.3 mm aircraft-grade aluminium finish metal body, the Infinix INBook X1 Core i5 Laptop sports a sleek look. And, as it weighs only 1.48 kg, you can conveniently carry it along wherever you go.",
-             "stock":50,
-             "color_type":2,
-             "size_type":2
-        }
-      }, 
-      {
-        "model": "products.product",
-        "pk": 4,
-        "fields": {
-            "category":2,
-            "product_name":"Mac Book Air M1",     
-            "image":"",
-            "price":"105000",
-            "description":"All-Day Battery Life  Go longer than ever with up to 18 hours of battery life. Powerful Performance  Take on everything from professional-quality editing to action-packed gaming with ease",
-             "stock":36,
-             "color_type":1,
-             "size_type":2
-        }
-      }, 
-      {
-        "model": "products.product",
-        "pk": 5,
-        "fields": {
-            "category":3,
-            "product_name":"BOSH Mixer Grinder",     
-            "image":"",
-            "price":"6299",
-            "description":"750 Watts mixer grinder with multi-function blade Attractive 4 jars with a capacity of 1.8L, 1.5L, 1L and 0.4L ABS material with vibrant color It comes with Titan Motor 1 year product warranty",
-             "stock":23,
-             "color_type":3,
-             "size_type":2
-        }
-      }, 
-      {
-        "model": "products.product",
-        "pk": 6,
-        "fields": {
-            "category":3,
-            "product_name":"Samsung 28L Microwave Oven",     
-            "image":"",
-            "price":"12890",
-            "description":"28L : Suitable for large families Convection Microwave Oven: Can be used for baking along with grilling, reheating, defrosting and cooking 1 year standard warranty on Product, 5 years warranty on Magnetron, 10 years warranty on Ceramic Enamel Cavity Control ",
-             "stock":84,
-             "color_type":2,
-             "size_type":2
-        }
-      }, 
-
-
-
-
-
-
-      {
-        "model": "products.productimages",
-        "pk": 1,
-        "fields": {
-          "product":1,
-          "image":""
-        }
-      },
-      
-      
-      {
-        "model": "products.productimages",
-        "pk": 2,
-        "fields": {
-            "product":2,
-            "image":""
-        }
-      },
-      {
-        "model": "products.productimages",
-        "pk": 3,
-        "fields": {
-            "product":3,
-            "image":""
-        }
-      },
-      {
-        "model": "products.productimages",
-        "pk": 4,
-        "fields": {
-            "product":4,
-            "image":""
-        }
-      },
-      {
-        "model": "products.productimages",
-        "pk": 5,
-        "fields": {
-            "product":5,
-            "image":""
-        }
-      },
-      {
-        "model": "products.productimages",
-        "pk": 6,
-        "fields": {
-            "product":6,
-            "image":""
-        }
+      "model": "products.category",
+      "pk": 3,
+      "fields": {
+        "category_name":"Home Appliance",
+        "slug":"home-appliance"
       }
+    },
 
 
-     
+      {
+      "model": "products.colorvariant",
+      "pk": 1,
+      "fields": {
+        "color_name":"Red",
+        "color_code":"#d11117"
+      }
+    },  
+    {
+      "model": "products.colorvariant",
+      "pk": 2,
+      "fields": {
+        "color_name":"Silver",
+        "color_code":"#a3a2a2"
+      }
+    },    {
+      "model": "products.colorvariant",
+      "pk": 3,
+      "fields": {
+        "color_name":"Green",
+        "color_code":"#46a364"
+      }
+    },  
+    
+    
+    
+    
+    
+    {
+      "model": "products.sizevariant",
+      "pk": 1,
+      "fields": {
+        "size_name":"Cms"
+      }
+    },
+
+    {
+      "model": "products.sizevariant",
+      "pk": 2,
+      "fields": {
+        "size_name":"Inches"
+      }
+    },
+
+
+    {
+      "model": "products.product",
+      "pk": 1,
+      "fields": {
+        "category":1,
+        "product_name":"Redmik50i",     
+        "image":"",
+        "price":"27000",
+        "description":"The 5G enabled Dimensity 8100 SoC built on TSMC s advanced 5nm process technology has 25% better CPU power efficiency over previous Dimensity chips",
+         "stock":100,
+         "color_type":1,
+         "size_type":1
+      }
+    }, 
+    {
+      "model": "products.product",
+      "pk": 2,
+      "fields": {
+          "category":1,
+          "product_name":"Mi 11x pro",     
+          "image":"",
+          "price":"41000",
+          "description":"Qualcomm Snapdragon 888 5G with Kryo 680 Octa-core; 5nm process; Up to 2.84GHz clock speed; Liquidcool Camera: 108 MP Triple Rear camera with 8MP Ultra-wide and 5MP Super macro | 20 MP Front camera",
+           "stock":9,
+           "color_type":3,
+           "size_type":1
+      }
+    }, 
+    {
+      "model": "products.product",
+      "pk": 3,
+      "fields": {
+          "category":2,
+          "product_name":"X1 slim",     
+          "image":"",
+          "price":"29000",
+          "description":"Built with a 16.3 mm aircraft-grade aluminium finish metal body, the Infinix INBook X1 Core i5 Laptop sports a sleek look. And, as it weighs only 1.48 kg, you can conveniently carry it along wherever you go.",
+           "stock":50,
+           "color_type":2,
+           "size_type":2
+      }
+    }, 
+    {
+      "model": "products.product",
+      "pk": 4,
+      "fields": {
+          "category":2,
+          "product_name":"Mac Book Air M1",     
+          "image":"",
+          "price":"105000",
+          "description":"All-Day Battery Life  Go longer than ever with up to 18 hours of battery life. Powerful Performance  Take on everything from professional-quality editing to action-packed gaming with ease",
+           "stock":36,
+           "color_type":1,
+           "size_type":2
+      }
+    }, 
+    {
+      "model": "products.product",
+      "pk": 5,
+      "fields": {
+          "category":3,
+          "product_name":"BOSH Mixer Grinder",     
+          "image":"",
+          "price":"6299",
+          "description":"750 Watts mixer grinder with multi-function blade Attractive 4 jars with a capacity of 1.8L, 1.5L, 1L and 0.4L ABS material with vibrant color It comes with Titan Motor 1 year product warranty",
+           "stock":23,
+           "color_type":3,
+           "size_type":2
+      }
+    }, 
+    {
+      "model": "products.product",
+      "pk": 6,
+      "fields": {
+          "category":3,
+          "product_name":"Samsung 28L Microwave Oven",     
+          "image":"",
+          "price":"12890",
+          "description":"28L : Suitable for large families Convection Microwave Oven: Can be used for baking along with grilling, reheating, defrosting and cooking 1 year standard warranty on Product, 5 years warranty on Magnetron, 10 years warranty on Ceramic Enamel Cavity Control ",
+           "stock":84,
+           "color_type":2,
+           "size_type":2
+      }
+    }
+
+]
 
 
 
