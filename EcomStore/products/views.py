@@ -9,18 +9,25 @@ from django.http import Http404
 from rest_framework.response import Response
 from rest_framework import status
 
-
+from django.utils.decorators import method_decorator
+from django.views.decorators.cache import cache_page
+from django.views.decorators.vary import vary_on_headers
 
 
 class ProductView(ModelViewSet):
     serializer_class = ProductSerializer
-    # permission_classes = [IsAuthenticated]   
-    
+    permission_classes = [IsAuthenticated]   
+    queryset = Product.objects.all()
 
-    def get_queryset(self):
-        product = Product.objects.all()
-       
-        return product
+    # With auth: cache requested url for each user for 5 minus
+    @method_decorator(cache_page(60*5))
+    @method_decorator(vary_on_headers("Authorization",))
+    def list(self, request):
+        queryset = Product.objects.all()
+        serializer = ProductSerializer(queryset, many=True)
+        return Response(serializer.data)
+
+  
 
     def create(self, request, *args, **kwargs):
         data = request.data
