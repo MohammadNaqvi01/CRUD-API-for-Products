@@ -1,7 +1,7 @@
 # CRUD-API-for-Products
 
 Python >= 3.8 
-
+Redis ~ 5 
 Latest Mysql server ~ 8
 
 
@@ -41,3 +41,4 @@ Now you are good to go
 
 Link to APIs documentation
 https://documenter.getpostman.com/view/19526448/UzkQayvV
+Redis msi for windows users https://github.com/tporadowski/redis/releases
